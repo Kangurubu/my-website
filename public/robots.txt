@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: https://www.batuhanteberoglu.com
+Sitemap: https://www.batuhanteberoglu.com/sitemap-index.xml

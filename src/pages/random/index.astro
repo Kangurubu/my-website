@@ -1,0 +1,46 @@
+---
+import Layout from "@layouts/Default.astro";
+import "lenis/dist/lenis.css";
+---
+
+<Layout
+  title="random"
+  description="bt Random | On this page you can find a collection of random stuff"
+  pageTitle="bt Random">
+  <main class="bg-green p-6">
+    <div class="h-[1000px] bg-white" id="section1">HEY</div>
+    <div class="h-[800px] bg-amber" id="section2">HEY</div>
+    <div class="h-[1600px] bg-red" id="section3">HEY</div>
+  </main>
+</Layout>
+
+<script>
+  import Lenis from "lenis";
+  import Snap from "lenis/snap";
+
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: "vertical",
+    smoothWheel: true,
+  });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  const snap = new Snap(lenis);
+
+  const section1 = document.getElementById("section1");
+  const section2 = document.getElementById("section2");
+  const section3 = document.getElementById("section3");
+
+  if (section1 && section2 && section3) {
+    snap.add(section1.offsetTop);
+    snap.add(section2.offsetTop);
+    snap.add(section3.offsetTop);
+  }
+</script>
