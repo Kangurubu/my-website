@@ -35,6 +35,32 @@ const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
     },
     {
       display: "swap",
+      name: "Poppins Bold",
+      selector: ".poppins-bold",
+      fallback: "sans-serif",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("poppins-bold.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Poppins Medium",
+      selector: ".poppins-medium",
+      fallback: "sans-serif",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: getFontPath("poppins-medium.ttf"),
+        },
+      ],
+    },
+    {
+      display: "swap",
       name: "Righteous",
       fallback: "sans-serif",
       selector: ".righteous",
