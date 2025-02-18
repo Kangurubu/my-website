@@ -34,7 +34,8 @@ const { pageTitle } = Astro.props;
             <a
               class="text-lg font-medium hover:text-[crimson] sanchez  hover:underline transition-all duration-150 ease-in-out"
               href={item.url}
-              title={`Go to ${item.name}`}>
+              title={`Go to ${item.name}`}
+              aria-label={item.name}>
               {item.name}
             </a>
           </li>
@@ -47,7 +48,8 @@ const { pageTitle } = Astro.props;
               href={item.url}
               class="hover:text-orange hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
-              title={`See bt on ${item.name}`}>
+              title={`See bt on ${item.name}`}
+              aria-label={item.name}>
               <div class:list={[item.icon, "w-6 h-6"]} />
             </a>
           </li>

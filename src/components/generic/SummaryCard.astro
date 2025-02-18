@@ -15,7 +15,14 @@ const { title, imgAlt, imgSrc, description } = Astro.props;
 <Card color="white">
   <h3 class="poppins-medium text-lg md:text-2xl">{title}</h3>
   <div class="rounded-lg border-3 border-black my-4 h-56">
-    <Image src={imgSrc} alt={imgAlt} width={800} height={400} class="rounded h-full w-full object-cover" />
+    <Image
+      src={imgSrc}
+      alt={imgAlt}
+      width={800}
+      height={400}
+      class="rounded h-full w-full object-cover"
+      loading="eager"
+    />
   </div>
   <p class="poppins">{description}</p>
   <slot />

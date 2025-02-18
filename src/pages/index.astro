@@ -5,6 +5,8 @@ import MobileSocials from "@components/home/MobileSocials.astro";
 import { Pill } from "@eliancodes/brutal-ui";
 import { Button } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
+import { Image } from "astro:assets";
+import ankaraImage from "../assets/ankara.png";
 
 const currentTech = [
   { name: "Vue.js (Options API)", url: "https://vuejs.org/" },
@@ -19,7 +21,7 @@ const currentTech = [
 ];
 ---
 
-<Layout title="Home" pageTitle="bt | Home" description="Personal website of Batuhan Teberoglu">
+<Layout title="Home" pageTitle="Home" description="Personal website of Batuhan Teberoglu">
   <main class="bg-[#22d3ee] p-6 *:min-h-full">
     <MobileSocials />
     <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
@@ -59,7 +61,7 @@ const currentTech = [
           <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4 outfit font-bold text-black text-center">
             Ankara / Türkiye
           </h2>
-          <img class="rounded-xl" src="images/ankara.png" />
+          <Image class="rounded-xl" src={ankaraImage} alt="Ankara, Türkiye" loading="eager" />
         </Card>
       </div>
     </section>
