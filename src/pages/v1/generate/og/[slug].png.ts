@@ -31,7 +31,7 @@ export const GET: APIRoute = async ({ params, props }) => {
             <p style="font-size: 48px;">bt</p>
             <p style="font-size: 38px;">${title}</p>
           </div>
-          <img src="https://www.batuhanteberoglu.com/images/kangaroo.jpg" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://www.batuhanteberoglu.com/images/kangaroo.jpg" width="210px" height="150px" style="border: 3px solid black; border-radius: 0.5rem;" />
         </div>
         <div style="display: flex;">
           <p style="font-size: 24px;">${description}</p>
