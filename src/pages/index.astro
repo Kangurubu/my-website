@@ -2,23 +2,9 @@
 import Layout from "@layouts/Default.astro";
 import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
 import MobileSocials from "@components/home/MobileSocials.astro";
-import { Pill } from "@eliancodes/brutal-ui";
 import { Button } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
-import { Image } from "astro:assets";
-import ankaraImage from "../assets/ankara.png";
 
-const currentTech = [
-  { name: "Vue.js (Options API)", url: "https://vuejs.org/" },
-  { name: "PHP", url: "https://www.php.net/" },
-  { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
-  { name: "React", url: "https://react.dev/" },
-  { name: "Django", url: "https://www.djangoproject.com/" },
-  { name: "Docker", url: "https://www.docker.com/" },
-  { name: "A-Frame", url: "https://aframe.io/" },
-  { name: "Playwright", url: "https://playwright.dev/" },
-  { name: "PHPUnit", url: "https://phpunit.de/" },
-];
 ---
 
 <Layout title="Home" pageTitle="Home" description="Personal website of Batuhan Teberoglu">
@@ -37,34 +23,91 @@ const currentTech = [
       </div>
       <div class="col-span-4 lg:col-span-2 space-y-4">
         <Card color="white">
-          <h2 class="outfit font-bold text-xl md:text-3xl lg:text-4xl mb-4 border-black w-fit mx-auto text-black">
-            What’s in My Dev Toolkit?
-          </h2>
-          <ul class="flex gap-4 flex-wrap justify-center">
-            {
-              currentTech.map((item) => (
-                <li>
-                  <Pill>
-                    <a class="sanchez" href={item.url} target="_blank" title={`Go to ${item.name}`}>
-                      {item.name}
-                    </a>
-                  </Pill>
-                </li>
-              ))
-            }
-            <li>And many more...</li>
-          </ul>
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Who am I?</h2>
+          <p class="text-lg md:text-xl leading-relaxed mt-4">
+            I'm a software engineer who loves building digital experiences that matter. 
+            When I'm not coding, you'll find me exploring new technologies, contributing to 
+            open source, or wandering around Ankara with my camera.
+          </p>
+          <p class="text-lg md:text-xl leading-relaxed mt-3">
+            I believe in clean code, thoughtful design, and the power of technology to 
+            solve real problems. Currently crafting solutions with modern web technologies 
+            and always learning something new.
+          </p>
+          <p class="text-lg md:text-xl leading-relaxed mt-3 font-medium">
+            Let's build something amazing together! 🚀
+          </p>
         </Card>
       </div>
       <div class="col-span-4 lg:col-span-2">
         <Card color="white">
           <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4 outfit font-bold text-black text-center">
-            Ankara / Türkiye
+            That's Me!
           </h2>
-          <Image class="rounded-xl" src={ankaraImage} alt="Ankara, Türkiye" loading="eager" />
+          <img class="rounded-xl w-48 h-48 mx-auto object-cover" src="/images/me.jpeg" alt="Batuhan Teberoglu" loading="eager" />
         </Card>
       </div>
     </section>
+    
+    <section id="additional-content" class="grid md:grid-cols-8 gap-8 mt-8">
+      <div class="col-span-8 md:col-span-3">
+        <Card color="white">
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Currently Working On</h2>
+          <div class="mt-4 space-y-3">
+            <p class="text-lg md:text-xl leading-relaxed">
+              🚧 <strong>Personal Website v2</strong> - Redesigning my portfolio with Astro and modern UX principles
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              📚 <strong>Learning</strong>: Advanced TypeScript patterns & performance optimization
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              🎯 <strong>Goal</strong>: Contributing more to open source projects and building developer tools
+            </p>
+          </div>
+        </Card>
+      </div>
+      
+      <div class="col-span-8 md:col-span-3">
+        <Card color="white">
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Let's Connect!</h2>
+          <div class="mt-4 space-y-3">
+            <p class="text-lg md:text-xl leading-relaxed">
+              📧 <strong>Email Me</strong> - Always open to interesting conversations
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              💼 <strong>Collaborate</strong> - Got a project idea? Let's make it happen
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              ☕ <strong>Coffee Chat</strong> - Love discussing tech, especially in Ankara
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed font-medium">
+              Drop me a line anytime! 📩
+            </p>
+          </div>
+        </Card>
+      </div>
+      
+      <div class="col-span-8 md:col-span-2">
+        <Card color="white">
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Fun Facts</h2>
+          <div class="mt-4 space-y-3">
+            <p class="text-lg md:text-xl leading-relaxed">
+              ☕ <strong>Coffee</strong>: 3 cups minimum for optimal coding
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              📚 <strong>Books</strong>: Always reading something tech-related
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              🥾 <strong>Hiking</strong>: Weekend trails around Ankara
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              🎮 <strong>Gaming</strong>: Strategy games for problem-solving
+            </p>
+          </div>
+        </Card>
+      </div>
+    </section>
+    
     <RecentBlogPosts />
   </main>
 </Layout>
