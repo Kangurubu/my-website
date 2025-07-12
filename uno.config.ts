@@ -1,9 +1,9 @@
 import {
   defineConfig,
   presetIcons,
-  presetWind,
   presetTypography,
 } from 'unocss';
+import { presetWind } from '@unocss/preset-wind3';
 
 export default defineConfig({
   presets: [

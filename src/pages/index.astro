@@ -14,43 +14,53 @@ import { Card } from "@eliancodes/brutal-ui";
       <h2 class="hidden">About me</h2>
       <div class="col-span-4">
         <Card color="white">
-          <div class="flex flex-col justify-between items-start md:gap-4">
-            <p class="md:mt-4 righteous text-3xl md:text-5xl lg:text-7xl">batuhan teberoğlu</p>
-            <p class="mb-4 md:mb-0 md:mt-2 outfit text-2xl md:text-3xl lg:text-5xl">Software Engineer</p>
-            <Button target={"_self"} href="/blog/">Check out the blog &rarr;</Button>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-col justify-between items-start md:gap-4 flex-1">
+              <p class="md:mt-4 righteous text-3xl md:text-5xl lg:text-7xl">batuhan teberoğlu</p>
+              <p class="mb-4 md:mb-0 md:mt-2 outfit text-2xl md:text-3xl lg:text-4xl font-light">Software Engineer
+                </p>
+              <Button target={"_self"} href="/blog/">Check out the blog &rarr;</Button>
+            </div>
+            <div class="ml-6 flex-shrink-0 hidden md:block">
+              <img class="rounded-xl w-32 h-32 lg:w-40 lg:h-40 object-cover" src="/images/me.jpeg" alt="Batuhan Teberoglu" loading="eager" />
+            </div>
           </div>
         </Card>
       </div>
       <div class="col-span-4 lg:col-span-2 space-y-4">
         <Card color="white">
-          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Who am I?</h2>
-          <p class="text-lg md:text-xl leading-relaxed mt-4">
-            I'm a software engineer who loves building digital experiences that matter. 
-            When I'm not coding, you'll find me exploring new technologies, contributing to 
-            open source, or wandering around Ankara with my camera.
-          </p>
-          <p class="text-lg md:text-xl leading-relaxed mt-3">
-            I believe in clean code, thoughtful design, and the power of technology to 
-            solve real problems. Currently crafting solutions with modern web technologies 
-            and always learning something new.
-          </p>
-          <p class="text-lg md:text-xl leading-relaxed mt-3 font-medium">
-            Let's build something amazing together! 🚀
-          </p>
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">About</h2>
+          <ul class="text-lg md:text-lg leading-relaxed mt-4 space-y-3">
+            <li>Currently specializing in cross-platform application development</li>
+            <li>Working as a software Engineer at Inofab Health (a Clario company)</li>
+            <li>BS in Computer Engineering - Middle East Technical University - 2025</li>
+            <li>Active member of Raw Banana Studio, located within METU ATOM</li>
+          </ul>
         </Card>
-      </div>
-      <div class="col-span-4 lg:col-span-2">
+      </div>      
+      <div class="col-span-8 md:col-span-2">
         <Card color="white">
-          <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4 outfit font-bold text-black text-center">
-            That's Me!
-          </h2>
-          <img class="rounded-xl w-48 h-48 mx-auto object-cover" src="/images/me.jpeg" alt="Batuhan Teberoglu" loading="eager" />
+          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Fun Facts</h2>
+          <div class="mt-4 space-y-3">
+            <p class="text-lg md:text-xl leading-relaxed">
+              🏓 <strong>Table Tennis</strong>: I know in detail yet lack practice
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              🎮 <strong>Gaming</strong>: Battlefield 1 & Overwatch 2
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              🥽 <strong>VR/AR</strong>: Passionate about VR/AR technologies, owner of a Meta Quest 3
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+              💬 <strong>Community</strong>: Regularly post in Donanım Haber Forum
+            </p>
+          </div>
         </Card>
       </div>
     </section>
     
     <section id="additional-content" class="grid md:grid-cols-8 gap-8 mt-8">
-      <div class="col-span-8 md:col-span-3">
+<!--       <div class="col-span-8 md:col-span-3">
         <Card color="white">
           <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Currently Working On</h2>
           <div class="mt-4 space-y-3">
@@ -65,9 +75,9 @@ import { Card } from "@eliancodes/brutal-ui";
             </p>
           </div>
         </Card>
-      </div>
+      </div> -->
       
-      <div class="col-span-8 md:col-span-3">
+<!--       <div class="col-span-8 md:col-span-3">
         <Card color="white">
           <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Let's Connect!</h2>
           <div class="mt-4 space-y-3">
@@ -77,35 +87,12 @@ import { Card } from "@eliancodes/brutal-ui";
             <p class="text-lg md:text-xl leading-relaxed">
               💼 <strong>Collaborate</strong> - Got a project idea? Let's make it happen
             </p>
-            <p class="text-lg md:text-xl leading-relaxed">
-              ☕ <strong>Coffee Chat</strong> - Love discussing tech, especially in Ankara
-            </p>
             <p class="text-lg md:text-xl leading-relaxed font-medium">
               Drop me a line anytime! 📩
             </p>
           </div>
         </Card>
-      </div>
-      
-      <div class="col-span-8 md:col-span-2">
-        <Card color="white">
-          <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Fun Facts</h2>
-          <div class="mt-4 space-y-3">
-            <p class="text-lg md:text-xl leading-relaxed">
-              ☕ <strong>Coffee</strong>: 3 cups minimum for optimal coding
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed">
-              📚 <strong>Books</strong>: Always reading something tech-related
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed">
-              🥾 <strong>Hiking</strong>: Weekend trails around Ankara
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed">
-              🎮 <strong>Gaming</strong>: Strategy games for problem-solving
-            </p>
-          </div>
-        </Card>
-      </div>
+      </div> -->
     </section>
     
     <RecentBlogPosts />
