@@ -12,7 +12,7 @@ import { Card } from "@eliancodes/brutal-ui";
     <MobileSocials />
     <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
       <h2 class="hidden">About me</h2>
-      <div class="col-span-4">
+      <div class="col-span-8 md:col-span-6 lg:col-span-5 xl:col-span-4">
         <Card color="white">
           <div class="flex justify-between items-center">
             <div class="flex flex-col justify-between items-start md:gap-4 flex-1">
@@ -21,16 +21,16 @@ import { Card } from "@eliancodes/brutal-ui";
                 </p>
               <Button target={"_self"} href="/blog/">Check out the blog &rarr;</Button>
             </div>
-            <div class="ml-6 flex-shrink-0 hidden md:block">
-              <img class="rounded-xl w-32 h-32 lg:w-40 lg:h-40 object-cover" src="/images/me.jpeg" alt="Batuhan Teberoglu" loading="eager" />
+            <div class="ml-6 flex-shrink-0 block">
+              <img class="rounded-xl w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover" src="/images/me.jpeg" alt="Batuhan Teberoglu" loading="eager" />
             </div>
           </div>
         </Card>
       </div>
-      <div class="col-span-4 lg:col-span-2 space-y-4">
+      <div class="col-span-8 lg:col-span-4 xl:col-span-2 space-y-4">
         <Card color="white">
           <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">About</h2>
-          <ul class="text-lg md:text-lg leading-relaxed mt-4 space-y-3">
+          <ul class="text-md md:text-lg leading-relaxed mt-4 space-y-3">
             <li>Currently specializing in cross-platform application development</li>
             <li>Working as a software Engineer at Inofab Health (a Clario company)</li>
             <li>BS in Computer Engineering - Middle East Technical University - 2025</li>
@@ -38,7 +38,7 @@ import { Card } from "@eliancodes/brutal-ui";
           </ul>
         </Card>
       </div>      
-      <div class="col-span-8 md:col-span-2">
+      <div class="col-span-8 lg:col-span-4 xl:col-span-2">
         <Card color="white">
           <h2 class="outfit font-bold text-xl md:text-2xl lg:text-3xl">Fun Facts</h2>
           <div class="mt-4 space-y-3">
